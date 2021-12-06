@@ -12,18 +12,25 @@ function TodoList() {
     setText("");
 
   }
+  const dblclick = {
+
+  }
   // console.log(x);
   return (<>
+  <h1>ToDo list</h1>
   <div className="container">
+    
+    <br/>
     <form  onSubmit={formSubmit}>
     <input type="text" value={text} onChange={(e) => setText(e.target.value)} />
+    <br />
     <button>+</button>
     </form>
     </div>
     {
       todo.map((nElem) =>{
         return(
-          <div>{nElem}</div>
+          <div className="box"><li key={nElem.id} onDblClick ={() =>{setTodo([])}}>{nElem}</li></div>
         )
       })
     }

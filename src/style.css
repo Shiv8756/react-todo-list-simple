@@ -1,3 +1,42 @@
-h1, p {
-  font-family: Lato;
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  background-color: black;
+  width: 500px;
+  height: 230px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 30px grey;
+}
+h1{
+  margin: 10px;
+  text-align: center;
+}
+.box{
+  margin-top:  35px;
+  text-align: center;
+  color: blue;
+}
+input{
+  margin-left: 45px;
+  width: 80%;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-bottom:  2px solid blueviolet;
+}
+button{
+ margin-left: 200px ;
+ margin-top: 25px;
+ width: 100px;
+ height: 40px;
+ outline: none;
+ font-weight: 900;
 }
